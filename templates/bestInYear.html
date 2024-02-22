@@ -1,0 +1,32 @@
+<!-- Sam Zinn -->
+<!-- sjz20g  -->
+<!-- due 02/21/24  -->
+<!-- The program in this file is the individual work of Sam Zinn  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best in Year</title>
+</head>
+<body>
+    <h1>Best Movies of Selected Year</h1>
+         <table border = 1>
+         <thead>
+            <td>Title</td>
+            <td>Genre</td>
+            <td>Rating</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["Title"]}}</td>
+               <td>{{row["Genre"]}}</td>
+               <td>{{row["Rating"]}}</td>	
+            </tr>
+         {% endfor %}
+      </table>
+<a href="/">Back to Home</a>
+</body>
+</html>

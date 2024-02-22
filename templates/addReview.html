@@ -1,0 +1,36 @@
+<!-- Sam Zinn -->
+<!-- sjz20g  -->
+<!-- due 02/21/24  -->
+<!-- The program in this file is the individual work of Sam Zinn  -->
+
+<html>
+   <body>
+    <h1>Submit a New Review</h1>
+      <form action = "/addreview" method = "POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="Username" required><br>
+
+        <h2>Movie Information</h2>
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="Title" required><br>
+
+        <label for="director">Director:</label>
+        <input type="text" id="director" name="Director" required><br>
+
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="Year" required><br>
+
+        <label for="genre">Genre:</label>
+        <input type="text" id="genre" name="Genre" required><br>
+
+        <h2>Your Review</h2>
+        <label for="review">Review:</label>
+        <textarea id="review" name="Review" required></textarea><br>
+
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" name="Rating" step="0.1" required><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

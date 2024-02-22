@@ -1,0 +1,32 @@
+<!-- Sam Zinn -->
+<!-- sjz20g  -->
+<!-- due 02/21/24  -->
+<!-- The program in this file is the individual work of Sam Zinn  -->
+
+<!doctype html>
+<html>
+   <body>
+   
+      <h1>All Reviews for this Genre</h1>
+         <table border = 1>
+         <thead>
+            <td>Title</td>
+            <td>Director</td>
+            <td>Review</td>
+            <td>Rating</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["Title"]}}</td>
+               <td>{{row["Director"]}}</td>
+               <td> {{ row["Review"]}}</td>
+               <td>{{row["Rating"]}}</td>	
+            </tr>
+         {% endfor %}
+      </table>
+<a href="/">Back to Home</a>
+      
+   </body>
+</html>
+
